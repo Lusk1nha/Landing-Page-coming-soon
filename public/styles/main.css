@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
 :root {
+  --background-color: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+
   --primary-color-1: hsl(0, 36%, 70%);
   --primary-color-2: hsl(0, 93%, 68%);
 
   --neutral-color: hsl(0, 6%, 24%);
 
-
+  --linear-color-1: linear-gradient(135deg, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
 
 }
 
@@ -21,18 +23,29 @@
 }
 
 body {
-  min-height: 100vh;
+  background: var(--background-color);
+
+  min-width: 250px;
+  min-height: 70vh;
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 
-  padding: 40px 0px;
+  padding: 25px 0px 10px;
 
 }
 
+header {
+  width: 100%;
+  
+}
+
 .logo-img {
+  width: 120px;
+  height: 30px;
+
   margin-left: 30px;
   margin-bottom: 40px;
 
@@ -46,7 +59,7 @@ body {
   object-position: 50% 50%;
 
   width: 100%;
-  height: 250px;
+  height: 220px;
 
   margin-bottom: 50px;
 
@@ -72,7 +85,7 @@ main {
   width: 100%;
 
   color: var(--primary-color-1);
-  font-size: 3rem;
+  font-size: 11vmin;
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 0.6rem;
@@ -82,7 +95,13 @@ main {
 }
 
 .strong-text strong {
+  width: 100%;
+
   color: black;
+  font-size: 11vmin;
+  font-weight: 600;
+
+  text-align: center;
 
 }
 
@@ -91,7 +110,7 @@ main {
   font-size: 1.01rem;
   line-height: 1.5rem;
 
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
 }
 
@@ -110,7 +129,7 @@ main {
   height: 50px;
 
   color: var(--primary-color-1);
-  font-size: 1rem;
+  font-size: 1.1rem;
 
   padding: 0px 60px 0px 20px;
 
@@ -121,18 +140,23 @@ main {
 
 }
 
-.inputContainer span {
-  background-color: var(--primary-color-1);
+.inputContainer button {
+  background: var(--linear-color-1);
 
   width: 70px;
   height: 50px;
 
-  border-radius: 40px;
-
+  
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
   margin-left: -50px;
+
+  border: none;
+  border-radius: 40px;
+  outline: none;
+
+  cursor: pointer;
 
 }
