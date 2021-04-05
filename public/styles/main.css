@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+  --primary-color-1: hsl(0, 36%, 70%);
+  --primary-color-2: hsl(0, 93%, 68%);
+
+  --neutral-color: hsl(0, 6%, 24%);
+
+
+
+}
+
+* {
+  box-sizing: border-box;
+  
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  padding: 40px 0px;
+
+}
+
+.logo-img {
+  margin-left: 30px;
+  margin-bottom: 40px;
+
+}
+
+.personImg {
+  background-image: url('../assets/hero-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  object-position: 50% 50%;
+
+  width: 100%;
+  height: 250px;
+
+  margin-bottom: 50px;
+
+}
+
+main {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 0px 35px;
+
+}
+
+.strong-text {
+  max-width: 450px;
+  width: 100%;
+
+  color: var(--primary-color-1);
+  font-size: 3rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+
+  margin-bottom: 20px;
+
+}
+
+.strong-text strong {
+  color: black;
+
+}
+
+.main-text {
+  color: var(--primary-color-1);
+  font-size: 1.01rem;
+  line-height: 1.5rem;
+
+  margin-bottom: 30px;
+
+}
+
+.inputContainer {
+  width: 100%;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.inputContainer input {
+  width: 100%;
+  height: 50px;
+
+  color: var(--primary-color-1);
+  font-size: 1rem;
+
+  padding: 0px 60px 0px 20px;
+
+  border-radius: 40px;
+  border: 1px solid var(--primary-color-1);
+
+  outline: none;
+
+}
+
+.inputContainer span {
+  background-color: var(--primary-color-1);
+
+  width: 70px;
+  height: 50px;
+
+  border-radius: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: -50px;
+
+}
